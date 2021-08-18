@@ -14,7 +14,7 @@ const VaccinationCoverage = props => {
     if (number === 0) {
       return '0'
     }
-    return `${number.toString()}k`
+    return `${(number / 1000).toString()}k`
   }
 
   return (
